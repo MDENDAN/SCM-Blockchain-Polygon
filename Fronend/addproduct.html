@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title> Product </title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <script type="module" src=" addproduct.js "></script>
+</head>
+
+<body>
+    <header class=" header ">
+        <div class="logo ">
+            <a href="# ">KEYY</a>
+            <div class="search_box ">
+                <input type="text " placeholder="Search ">
+                <i class="fa-sharp fa-solid fa-magnifying-glass "></i>
+            </div>
+        </div>
+
+        <div class="header-icons ">
+            <i class="fas fa-bell "></i>
+            <div class="account ">
+                <h4> User </h4>
+            </div>
+        </div>
+    </header>
+    <div class="container ">
+        <nav>
+            <div class="side_navbar ">
+                <span>Main Menu</span>
+                <a href="Dashboard.html " class="active ">Dashboard</a>
+                <a href="addproduct.html ">Add Product </a>
+                <a href="status.html ">Status</a>
+                <a href="# ">My Account</a>
+
+                <div class="links ">
+                    <span>Quick Link</span>
+                    <a href="# ">Paypal</a>
+                    <a href="# ">Bank Transfer</a>
+                    <a href="# ">Cryptocurrency</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="main-body ">
+            <h2> Add Product </h2>
+            <br>
+            <br>
+            <form id="myform " class="form-inline ">
+                <label for="Name ">Product Name</label>
+                <input type="text " id="Name " placeholder="Enter Product " name="Name ">
+                <br>
+                <br>
+                <label for="Mname ">ManuFacturer Name</label>
+                <input type="text " id="Mname " placeholder="Enter ManuFacturer Name " name="Mname ">
+                <br>
+                <br>
+                <label for="Qunatity ">Total Qunatity</label>
+                <input type="text " id="Qunatity " placeholder="Add Qunatity " name="Qunatity ">
+                <br>
+                <br>
+                <label for="Temperature ">Temperature Required</label>
+                <input type="text " id="Temperature " placeholder="Enter Temperature in Celsius " name="Temperature ">
+                <br>
+                <br>
+                <label for="Humidity ">Humidity Required</label>
+                <input type="text " id="Humidity " placeholder="Enter Humidity in percentage " name="Humidity ">
+                <br>
+                <br>
+                <label for="Location ">Location</label>
+                <input type="text " id="Location " placeholder="Enter Source Location " name="Location ">
+                <br>
+                <br>
+                <label for="Destination ">Destination</label>
+                <input type="text " id="Destination " placeholder="Enter Destination " name="Destination ">
+                <br>
+                <br>
+                <button type="submit " onclick="handleSubmit() "> Add Product </button>
+            </form>
+        </div>
